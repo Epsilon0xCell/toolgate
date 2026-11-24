@@ -1,0 +1,16 @@
+{
+  "emitted_last_receipt": {
+    "reason_code": "revoked",
+    "type": "DENIAL"
+  },
+  "expected_last_receipt": {
+    "reason_code": "revoked",
+    "receipt_type": "DENIAL"
+  },
+  "final_chain_head": "bcdc7fe894657cf32a17f4d8586570594ad014b80d0dc925d742b976f4525fab",
+  "id": "F-033",
+  "kind": "receipt_bundle",
+  "receipt_count": 5,
+  "title": "K2: a killed seat replays a pre-kill authorisation and is denied",
+  "verdict": "valid"
+}

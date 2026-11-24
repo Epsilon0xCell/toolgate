@@ -1,0 +1,16 @@
+{
+  "emitted_last_receipt": {
+    "reason_code": "scope",
+    "type": "DENIAL"
+  },
+  "expected_last_receipt": {
+    "reason_code": "scope",
+    "receipt_type": "DENIAL"
+  },
+  "final_chain_head": "985388554750d01013bb6f14b09f185de9ac7355aad92af70c24f091443618f4",
+  "id": "F-018",
+  "kind": "receipt_bundle",
+  "receipt_count": 4,
+  "title": "tool not in the manifest: a scope denial for an unlisted tool",
+  "verdict": "valid"
+}

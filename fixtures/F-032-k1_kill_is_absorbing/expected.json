@@ -1,0 +1,14 @@
+{
+  "authority": "Standing recomputed by ComputeStanding over the fixture receipts and standing_policy (specification Section 16)",
+  "expected_standing": {
+    "write": {
+      "actions": 5,
+      "minted": 18,
+      "standing": 0
+    }
+  },
+  "id": "F-032",
+  "kind": "standing",
+  "title": "K1: a kill is absorbing; post-kill actions restore no Standing",
+  "verdict": null
+}

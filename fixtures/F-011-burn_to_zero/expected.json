@@ -1,0 +1,17 @@
+{
+  "authority": "Standing recomputed by ComputeStanding over the fixture receipts and standing_policy (specification Section 16)",
+  "expected_standing": {
+    "write": {
+      "actions": 6,
+      "burn_recorded": 36,
+      "burned": 36,
+      "denials": 1,
+      "minted": 36,
+      "standing": 0
+    }
+  },
+  "id": "F-011",
+  "kind": "standing",
+  "title": "one severe denial burns an epoch of mint to zero",
+  "verdict": null
+}

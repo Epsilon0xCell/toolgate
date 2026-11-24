@@ -1,0 +1,13 @@
+{
+  "emitted_last_receipt": {
+    "reason_code": null,
+    "type": "DENIAL"
+  },
+  "expected_code": "DENIAL_REASON_MISSING",
+  "final_chain_head": "aa4cda828f11545121459fb709580b9582547c5e6a5f7f1e12c3f0f1b7210965",
+  "id": "F-004",
+  "kind": "receipt_bundle",
+  "receipt_count": 2,
+  "title": "denial without a reason code",
+  "verdict": "invalid"
+}

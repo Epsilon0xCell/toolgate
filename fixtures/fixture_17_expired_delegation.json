@@ -1,0 +1,212 @@
+{
+  "charter": {
+    "amendment": {
+      "authorized_key_ids": [
+        "founder-root-key-1"
+      ],
+      "frozen_fields": [
+        "kill_switch",
+        "amendment"
+      ],
+      "notice_period_seconds": 86400
+    },
+    "anchoring": {
+      "mechanisms": [
+        "rfc3161",
+        "transparency-log"
+      ]
+    },
+    "authority_manifests": [
+      {
+        "budget_ref": "b-operator",
+        "expires_at": 1766500000,
+        "grantee_seat": "operator",
+        "grantor_seat": "founder",
+        "issued_at": 1763900000,
+        "manifest_id": "m-founder-operator",
+        "scope": {
+          "limits": {
+            "external_calls": 10,
+            "spend_units": 100
+          },
+          "operations": [
+            "call",
+            "delegate"
+          ],
+          "resources": [
+            "repo"
+          ],
+          "tools": [
+            "read",
+            "write"
+          ]
+        },
+        "sub_delegation_allowed": true
+      },
+      {
+        "expires_at": 1763900100,
+        "grantee_seat": "helper",
+        "grantor_seat": "operator",
+        "issued_at": 1763900100,
+        "manifest_id": "m-operator-helper",
+        "parent_manifest_id": "m-founder-operator",
+        "scope": {
+          "limits": {
+            "external_calls": 2,
+            "spend_units": 10
+          },
+          "operations": [
+            "call"
+          ],
+          "resources": [
+            "repo"
+          ],
+          "tools": [
+            "read"
+          ]
+        },
+        "sub_delegation_allowed": false
+      }
+    ],
+    "budgets": [
+      {
+        "amount": 100,
+        "budget_id": "b-operator",
+        "on_limit": "refuse",
+        "period": "day",
+        "seat_id": "operator",
+        "unit": "spend_units"
+      }
+    ],
+    "charter_hash": "964ee369cf2deab5185a700165e76eb66f710a3e17c0d21f7c61c888de23b5d6",
+    "charter_version": "0.1",
+    "envelope": {
+      "payload": "eyJhbWVuZG1lbnQiOnsiYXV0aG9yaXplZF9rZXlfaWRzIjpbImZvdW5kZXItcm9vdC1rZXktMSJdLCJmcm96ZW5fZmllbGRzIjpbImtpbGxfc3dpdGNoIiwiYW1lbmRtZW50Il0sIm5vdGljZV9wZXJpb2Rfc2Vjb25kcyI6ODY0MDB9LCJhbmNob3JpbmciOnsibWVjaGFuaXNtcyI6WyJyZmMzMTYxIiwidHJhbnNwYXJlbmN5LWxvZyJdfSwiYXV0aG9yaXR5X21hbmlmZXN0cyI6W3siYnVkZ2V0X3JlZiI6ImItb3BlcmF0b3IiLCJleHBpcmVzX2F0IjoxNzY2NTAwMDAwLCJncmFudGVlX3NlYXQiOiJvcGVyYXRvciIsImdyYW50b3Jfc2VhdCI6ImZvdW5kZXIiLCJpc3N1ZWRfYXQiOjE3NjM5MDAwMDAsIm1hbmlmZXN0X2lkIjoibS1mb3VuZGVyLW9wZXJhdG9yIiwic2NvcGUiOnsibGltaXRzIjp7ImV4dGVybmFsX2NhbGxzIjoxMCwic3BlbmRfdW5pdHMiOjEwMH0sIm9wZXJhdGlvbnMiOlsiY2FsbCIsImRlbGVnYXRlIl0sInJlc291cmNlcyI6WyJyZXBvIl0sInRvb2xzIjpbInJlYWQiLCJ3cml0ZSJdfSwic3ViX2RlbGVnYXRpb25fYWxsb3dlZCI6dHJ1ZX0seyJleHBpcmVzX2F0IjoxNzYzOTAwMTAwLCJncmFudGVlX3NlYXQiOiJoZWxwZXIiLCJncmFudG9yX3NlYXQiOiJvcGVyYXRvciIsImlzc3VlZF9hdCI6MTc2MzkwMDEwMCwibWFuaWZlc3RfaWQiOiJtLW9wZXJhdG9yLWhlbHBlciIsInBhcmVudF9tYW5pZmVzdF9pZCI6Im0tZm91bmRlci1vcGVyYXRvciIsInNjb3BlIjp7ImxpbWl0cyI6eyJleHRlcm5hbF9jYWxscyI6Miwic3BlbmRfdW5pdHMiOjEwfSwib3BlcmF0aW9ucyI6WyJjYWxsIl0sInJlc291cmNlcyI6WyJyZXBvIl0sInRvb2xzIjpbInJlYWQiXX0sInN1Yl9kZWxlZ2F0aW9uX2FsbG93ZWQiOmZhbHNlfV0sImJ1ZGdldHMiOlt7ImFtb3VudCI6MTAwLCJidWRnZXRfaWQiOiJiLW9wZXJhdG9yIiwib25fbGltaXQiOiJyZWZ1c2UiLCJwZXJpb2QiOiJkYXkiLCJzZWF0X2lkIjoib3BlcmF0b3IiLCJ1bml0Ijoic3BlbmRfdW5pdHMifV0sImNoYXJ0ZXJfdmVyc2lvbiI6IjAuMSIsImtpbGxfc3dpdGNoIjp7ImF1dGhvcml6ZWRfa2V5X2lkcyI6WyJmb3VuZGVyLXJvb3Qta2V5LTEiXSwicmVjb3Zlcnlfc2VhdCI6ImZvdW5kZXIifSwib3JnIjp7ImNoYXJ0ZXJfaWQiOiJvcmctZXhhbXBsZS0wMDAxIiwiZm91bmRlZCI6IjIwMjYtMTEtMjMiLCJmb3VuZGVyX2tleV9pZCI6ImZvdW5kZXItcm9vdC1rZXktMSIsIm5hbWUiOiJFeGFtcGxlIEZpcm0ifSwic2VhdHMiOlt7Im9jY3VwYW50X2tleV9pZCI6ImZvdW5kZXItcm9vdC1rZXktMSIsInJlcG9ydHNfdG8iOm51bGwsInJvbGUiOiJyb290Iiwic2NvcGUiOnsibGltaXRzIjp7ImV4dGVybmFsX2NhbGxzIjoxMDAsInNwZW5kX3VuaXRzIjoxMDAwfSwib3BlcmF0aW9ucyI6WyJjYWxsIiwiZGVsZWdhdGUiLCJyZXZva2UiXSwicmVzb3VyY2VzIjpbInJlcG8iLCJsZWRnZXIiXSwidG9vbHMiOlsicmVhZCIsIndyaXRlIiwiZXhlYyJdfSwic2VhdF9pZCI6ImZvdW5kZXIiLCJ0aXRsZSI6IkZvdW5kZXIifSx7Im9jY3VwYW50X2tleV9pZCI6Im9wZXJhdG9yLWtleS0xIiwicmVwb3J0c190byI6ImZvdW5kZXIiLCJyb2xlIjoid29ya2VyIiwic2NvcGUiOnsibGltaXRzIjp7ImV4dGVybmFsX2NhbGxzIjoxMCwic3BlbmRfdW5pdHMiOjEwMH0sIm9wZXJhdGlvbnMiOlsiY2FsbCIsImRlbGVnYXRlIl0sInJlc291cmNlcyI6WyJyZXBvIl0sInRvb2xzIjpbInJlYWQiLCJ3cml0ZSJdfSwic2VhdF9pZCI6Im9wZXJhdG9yIiwidGl0bGUiOiJPcGVyYXRvciJ9LHsib2NjdXBhbnRfa2V5X2lkIjoiaGVscGVyLWtleS0xIiwicmVwb3J0c190byI6Im9wZXJhdG9yIiwicm9sZSI6IndvcmtlciIsInNjb3BlIjp7ImxpbWl0cyI6eyJleHRlcm5hbF9jYWxscyI6Miwic3BlbmRfdW5pdHMiOjEwfSwib3BlcmF0aW9ucyI6WyJjYWxsIl0sInJlc291cmNlcyI6WyJyZXBvIl0sInRvb2xzIjpbInJlYWQiXX0sInNlYXRfaWQiOiJoZWxwZXIiLCJ0aXRsZSI6IkhlbHBlciJ9XSwic3RhbmRpbmdfcG9saWN5Ijp7ImVwb2NoX3NlY29uZHMiOjg2NDAwLCJzY29wZV9jbGFzc2VzIjp7ImRlZmF1bHQiOnsiYnVybl9tdWx0aXBsaWVycyI6eyJyZXZva2VkIjoxMCwic2NvcGUiOjEwfSwiYnVybl91bml0Ijo1LCJoYWxmX2xpZmVfc2Vjb25kcyI6NjA0ODAwLCJtaW50X2NhcF9wZXJfZXBvY2giOjUwLCJtaW50X3JhdGUiOjEsInNldmVyZV9yZWFzb25fY29kZXMiOlsicmV2b2tlZCIsInNjb3BlIl19fSwic3RhbmRpbmdfcG9saWN5X3ZlcnNpb24iOiIwLjEifSwic3VjY2Vzc2lvbiI6W3sic2VhdCI6ImZvdW5kZXIiLCJzdWNjZXNzb3Jfc2VhdCI6Im9wZXJhdG9yIiwidHJpZ2dlciI6InNpZ25lZF9zdWNjZXNzaW9uX2FjdCJ9XX0=",
+      "payload_type": "application/vnd.institutio.charter.v0.1+json",
+      "signatures": [
+        {
+          "key_id": "founder-root-key-1",
+          "signature": "Ex+w/AlamhrAlNHOcKr4uTiJ9gnDvD4YKLjZ1Ts0vmQ="
+        }
+      ]
+    },
+    "kill_switch": {
+      "authorized_key_ids": [
+        "founder-root-key-1"
+      ],
+      "recovery_seat": "founder"
+    },
+    "org": {
+      "charter_id": "org-example-0001",
+      "founded": "2026-11-23",
+      "founder_key_id": "founder-root-key-1",
+      "name": "Example Firm"
+    },
+    "seats": [
+      {
+        "occupant_key_id": "founder-root-key-1",
+        "reports_to": null,
+        "role": "root",
+        "scope": {
+          "limits": {
+            "external_calls": 100,
+            "spend_units": 1000
+          },
+          "operations": [
+            "call",
+            "delegate",
+            "revoke"
+          ],
+          "resources": [
+            "repo",
+            "ledger"
+          ],
+          "tools": [
+            "read",
+            "write",
+            "exec"
+          ]
+        },
+        "seat_id": "founder",
+        "title": "Founder"
+      },
+      {
+        "occupant_key_id": "operator-key-1",
+        "reports_to": "founder",
+        "role": "worker",
+        "scope": {
+          "limits": {
+            "external_calls": 10,
+            "spend_units": 100
+          },
+          "operations": [
+            "call",
+            "delegate"
+          ],
+          "resources": [
+            "repo"
+          ],
+          "tools": [
+            "read",
+            "write"
+          ]
+        },
+        "seat_id": "operator",
+        "title": "Operator"
+      },
+      {
+        "occupant_key_id": "helper-key-1",
+        "reports_to": "operator",
+        "role": "worker",
+        "scope": {
+          "limits": {
+            "external_calls": 2,
+            "spend_units": 10
+          },
+          "operations": [
+            "call"
+          ],
+          "resources": [
+            "repo"
+          ],
+          "tools": [
+            "read"
+          ]
+        },
+        "seat_id": "helper",
+        "title": "Helper"
+      }
+    ],
+    "standing_policy": {
+      "epoch_seconds": 86400,
+      "scope_classes": {
+        "default": {
+          "burn_multipliers": {
+            "revoked": 10,
+            "scope": 10
+          },
+          "burn_unit": 5,
+          "half_life_seconds": 604800,
+          "mint_cap_per_epoch": 50,
+          "mint_rate": 1,
+          "severe_reason_codes": [
+            "revoked",
+            "scope"
+          ]
+        }
+      },
+      "standing_policy_version": "0.1"
+    },
+    "succession": [
+      {
+        "seat": "founder",
+        "successor_seat": "operator",
+        "trigger": "signed_succession_act"
+      }
+    ]
+  },
+  "expected_error_contains": "expires_at must be after issued_at",
+  "expected_verdict": "invalid",
+  "kind": "charter",
+  "name": "expired delegation: a manifest expiring at its own issue time"
+}

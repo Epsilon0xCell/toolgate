@@ -1,0 +1,7 @@
+{
+  "expected_error_contains": "exceeds parent",
+  "id": "F-005",
+  "kind": "charter",
+  "title": "child delegation exceeding its parent",
+  "verdict": "invalid"
+}

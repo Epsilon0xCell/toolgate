@@ -1,0 +1,16 @@
+{
+  "emitted_last_receipt": {
+    "reason_code": "revoked",
+    "type": "DENIAL"
+  },
+  "expected_last_receipt": {
+    "reason_code": "revoked",
+    "receipt_type": "DENIAL"
+  },
+  "final_chain_head": "abd89422d575c8d53dd9b115eae6e949ceebc05bed31d68e8c0e38b41612087e",
+  "id": "F-006",
+  "kind": "receipt_bundle",
+  "receipt_count": 4,
+  "title": "replayed authorisation attempt recorded as a denial",
+  "verdict": "valid"
+}

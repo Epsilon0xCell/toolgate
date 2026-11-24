@@ -1,0 +1,139 @@
+{
+  "agent_id": "agent-operator-1",
+  "eval_time": 1763900300,
+  "expected_standing": {
+    "write": {
+      "actions": 5,
+      "minted": 18,
+      "standing": 0
+    }
+  },
+  "kind": "standing",
+  "name": "K1: a kill is absorbing; post-kill actions restore no Standing",
+  "receipts": [
+    {
+      "action": {
+        "arguments_hash": "2a53eaab2dfb61f9e98c6f383810390df3ee29a5900e2d99db7d4adf369f49eb",
+        "name": "repo.write",
+        "risk_weight": 3,
+        "scope_class": "write"
+      },
+      "agent": {
+        "id": "agent-operator-1",
+        "model": "model-x",
+        "model_version": "1.0"
+      },
+      "receipt_type": "ACTION",
+      "result_hash": "09cb55a0c98ff369fab4d8c44016c6780b8a7000501daefa4ae556605a569f6b",
+      "timestamp": 1763900000
+    },
+    {
+      "action": {
+        "arguments_hash": "2a53eaab2dfb61f9e98c6f383810390df3ee29a5900e2d99db7d4adf369f49eb",
+        "name": "repo.write",
+        "risk_weight": 3,
+        "scope_class": "write"
+      },
+      "agent": {
+        "id": "agent-operator-1",
+        "model": "model-x",
+        "model_version": "1.0"
+      },
+      "receipt_type": "ACTION",
+      "result_hash": "09cb55a0c98ff369fab4d8c44016c6780b8a7000501daefa4ae556605a569f6b",
+      "timestamp": 1763900060
+    },
+    {
+      "action": {
+        "arguments_hash": "2a53eaab2dfb61f9e98c6f383810390df3ee29a5900e2d99db7d4adf369f49eb",
+        "name": "repo.write",
+        "risk_weight": 3,
+        "scope_class": "write"
+      },
+      "agent": {
+        "id": "agent-operator-1",
+        "model": "model-x",
+        "model_version": "1.0"
+      },
+      "receipt_type": "ACTION",
+      "result_hash": "09cb55a0c98ff369fab4d8c44016c6780b8a7000501daefa4ae556605a569f6b",
+      "timestamp": 1763900120
+    },
+    {
+      "action": {
+        "arguments_hash": "2a53eaab2dfb61f9e98c6f383810390df3ee29a5900e2d99db7d4adf369f49eb",
+        "name": "standing.kill-burn",
+        "risk_weight": 3,
+        "scope_class": "write"
+      },
+      "agent": {
+        "id": "agent-operator-1",
+        "model": "model-x",
+        "model_version": "1.0"
+      },
+      "killed_agent_ids": [
+        "agent-operator-1"
+      ],
+      "receipt_type": "KILL-BURN",
+      "result_hash": "09cb55a0c98ff369fab4d8c44016c6780b8a7000501daefa4ae556605a569f6b",
+      "timestamp": 1763900180
+    },
+    {
+      "action": {
+        "arguments_hash": "2a53eaab2dfb61f9e98c6f383810390df3ee29a5900e2d99db7d4adf369f49eb",
+        "name": "repo.write",
+        "risk_weight": 3,
+        "scope_class": "write"
+      },
+      "agent": {
+        "id": "agent-operator-1",
+        "model": "model-x",
+        "model_version": "1.0"
+      },
+      "receipt_type": "ACTION",
+      "result_hash": "09cb55a0c98ff369fab4d8c44016c6780b8a7000501daefa4ae556605a569f6b",
+      "timestamp": 1763900240
+    },
+    {
+      "action": {
+        "arguments_hash": "2a53eaab2dfb61f9e98c6f383810390df3ee29a5900e2d99db7d4adf369f49eb",
+        "name": "repo.write",
+        "risk_weight": 3,
+        "scope_class": "write"
+      },
+      "agent": {
+        "id": "agent-operator-1",
+        "model": "model-x",
+        "model_version": "1.0"
+      },
+      "receipt_type": "ACTION",
+      "result_hash": "09cb55a0c98ff369fab4d8c44016c6780b8a7000501daefa4ae556605a569f6b",
+      "timestamp": 1763900300
+    }
+  ],
+  "standing_policy": {
+    "ceiling_curve": [
+      {
+        "max_budget_per_action": 100,
+        "max_budget_per_epoch": 1000,
+        "max_data_sensitivity": 3,
+        "max_delegation_depth": 3,
+        "max_fanout": 8,
+        "max_irreversibility": 3,
+        "min_standing": 0
+      }
+    ],
+    "scope_classes": {
+      "write": {
+        "burn_multipliers": {
+          "revoked": 1
+        },
+        "burn_unit": 36,
+        "half_life_seconds": 10000000,
+        "hop_attenuation_ppm": 1000000,
+        "mint_cap_per_epoch": 36,
+        "mint_rate": 2
+      }
+    }
+  }
+}

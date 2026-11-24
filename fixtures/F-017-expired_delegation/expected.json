@@ -1,0 +1,7 @@
+{
+  "expected_error_contains": "expires_at must be after issued_at",
+  "id": "F-017",
+  "kind": "charter",
+  "title": "expired delegation: a manifest expiring at its own issue time",
+  "verdict": "invalid"
+}

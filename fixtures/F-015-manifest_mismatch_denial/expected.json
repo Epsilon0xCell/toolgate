@@ -1,0 +1,16 @@
+{
+  "emitted_last_receipt": {
+    "reason_code": "manifest-mismatch",
+    "type": "DENIAL"
+  },
+  "expected_last_receipt": {
+    "reason_code": "manifest-mismatch",
+    "receipt_type": "DENIAL"
+  },
+  "final_chain_head": "5de8a8a6946181ac084677fe95aa5102a6bc6ee170791ca09058257ddad90c77",
+  "id": "F-015",
+  "kind": "receipt_bundle",
+  "receipt_count": 4,
+  "title": "manifest-mismatch denial: the served tool differs from its pin",
+  "verdict": "valid"
+}

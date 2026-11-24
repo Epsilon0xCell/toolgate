@@ -1,0 +1,205 @@
+{
+  "bundle": {
+    "bundle_version": "0.1",
+    "receipts": [
+      {
+        "action": {
+          "arguments_hash": "b348ccabde3d3dc0070604745e841c045e78aa27013b05e7bd2b031b813e51a2",
+          "name": "grant.delegate"
+        },
+        "agent": {
+          "id": "agent-operator-1",
+          "model": "model-x",
+          "model_version": "1.0"
+        },
+        "delegator": "seat-founder",
+        "effects": {
+          "artifacts_changed": [],
+          "external_calls": [],
+          "sub_delegations": []
+        },
+        "envelope": {
+          "payload": "eyJhY3Rpb24iOnsiYXJndW1lbnRzX2hhc2giOiJiMzQ4Y2NhYmRlM2QzZGMwMDcwNjA0NzQ1ZTg0MWMwNDVlNzhhYTI3MDEzYjA1ZTdiZDJiMDMxYjgxM2U1MWEyIiwibmFtZSI6ImdyYW50LmRlbGVnYXRlIn0sImFnZW50Ijp7ImlkIjoiYWdlbnQtb3BlcmF0b3ItMSIsIm1vZGVsIjoibW9kZWwteCIsIm1vZGVsX3ZlcnNpb24iOiIxLjAifSwiZGVsZWdhdG9yIjoic2VhdC1mb3VuZGVyIiwiZWZmZWN0cyI6eyJhcnRpZmFjdHNfY2hhbmdlZCI6W10sImV4dGVybmFsX2NhbGxzIjpbXSwic3ViX2RlbGVnYXRpb25zIjpbXX0sInByaW9yX3JlY2VpcHRfaGFzaCI6IjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAiLCJyZWNlaXB0X2lkIjoici0wMDAxIiwicmVjZWlwdF90eXBlIjoiR1JBTlQiLCJyZWNlaXB0X3ZlcnNpb24iOiIwLjEiLCJyZXN1bHRfaGFzaCI6IjU4MmRkYjE5NDcxYTJiZWE3Y2QxNTRkNzU2MDFiZmEwMjhmMmM5OGEyNzI5ZmEyZGRiNjE3MDVhODcyMjM3M2IiLCJzY29wZV9ncmFudGVkIjoidG9vbHM9W3JlYWQsd3JpdGVdO3Jlc291cmNlcz1bcmVwb107b3BzPVtjYWxsXSIsInNlcXVlbmNlIjowLCJ0aW1lc3RhbXAiOjE3NjM5MDAwMDB9",
+          "payload_type": "application/vnd.acta.receipt.v0.1+json",
+          "signatures": [
+            {
+              "key_id": "acta-test-key-1",
+              "signature": "frP98vnQuHisIszQPwyMGUucE8cYAFiOfELLFtiQah4="
+            }
+          ]
+        },
+        "prior_receipt_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "receipt_hash": "47660a61a9e60b73c646316477d18a524a241989623f2e7b659ae0e9c1f2fb31",
+        "receipt_id": "r-0001",
+        "receipt_type": "GRANT",
+        "receipt_version": "0.1",
+        "result_hash": "582ddb19471a2bea7cd154d75601bfa028f2c98a2729fa2ddb61705a8722373b",
+        "scope_granted": "tools=[read,write];resources=[repo];ops=[call]",
+        "sequence": 0,
+        "timestamp": 1763900000
+      },
+      {
+        "action": {
+          "arguments_hash": "aedd8bc16398dd8c6ed73015d4b18ce13510c8bf5e14c244651c724dcb0a67cb",
+          "name": "repo.write_file"
+        },
+        "agent": {
+          "id": "agent-operator-1",
+          "model": "model-x",
+          "model_version": "1.0"
+        },
+        "delegator": "seat-founder",
+        "effects": {
+          "artifacts_changed": [
+            "repo/file.txt"
+          ],
+          "external_calls": [],
+          "sub_delegations": []
+        },
+        "envelope": {
+          "payload": "eyJhY3Rpb24iOnsiYXJndW1lbnRzX2hhc2giOiJhZWRkOGJjMTYzOThkZDhjNmVkNzMwMTVkNGIxOGNlMTM1MTBjOGJmNWUxNGMyNDQ2NTFjNzI0ZGNiMGE2N2NiIiwibmFtZSI6InJlcG8ud3JpdGVfZmlsZSJ9LCJhZ2VudCI6eyJpZCI6ImFnZW50LW9wZXJhdG9yLTEiLCJtb2RlbCI6Im1vZGVsLXgiLCJtb2RlbF92ZXJzaW9uIjoiMS4wIn0sImRlbGVnYXRvciI6InNlYXQtZm91bmRlciIsImVmZmVjdHMiOnsiYXJ0aWZhY3RzX2NoYW5nZWQiOlsicmVwby9maWxlLnR4dCJdLCJleHRlcm5hbF9jYWxscyI6W10sInN1Yl9kZWxlZ2F0aW9ucyI6W119LCJwcmlvcl9yZWNlaXB0X2hhc2giOiI0NzY2MGE2MWE5ZTYwYjczYzY0NjMxNjQ3N2QxOGE1MjRhMjQxOTg5NjIzZjJlN2I2NTlhZTBlOWMxZjJmYjMxIiwicmVjZWlwdF9pZCI6InItMDAwMiIsInJlY2VpcHRfdHlwZSI6IkFDVElPTiIsInJlY2VpcHRfdmVyc2lvbiI6IjAuMSIsInJlc3VsdF9oYXNoIjoiMzkwYTVjNjI4ZGJjOTZiMDM5YzBiZjA0MzQxZGE3NWFiZGU5YmYyNmJiZjMxYWYzZGQwNjRjMDg2YjFlMjMyNSIsInNjb3BlX2dyYW50ZWQiOiJ0b29scz1bcmVhZCx3cml0ZV07cmVzb3VyY2VzPVtyZXBvXTtvcHM9W2NhbGxdIiwic2VxdWVuY2UiOjEsInRpbWVzdGFtcCI6MTc2MzkwMDA2MH0=",
+          "payload_type": "application/vnd.acta.receipt.v0.1+json",
+          "signatures": [
+            {
+              "key_id": "acta-test-key-1",
+              "signature": "pAn9c4y0sLElehcmplRO/2laxB+1DFnVlxpoFmaNpTA="
+            }
+          ]
+        },
+        "prior_receipt_hash": "47660a61a9e60b73c646316477d18a524a241989623f2e7b659ae0e9c1f2fb31",
+        "receipt_hash": "325efa0be0b52d1f6a78bbb74cde4a17414d516335e756de629f2f613d559780",
+        "receipt_id": "r-0002",
+        "receipt_type": "ACTION",
+        "receipt_version": "0.1",
+        "result_hash": "390a5c628dbc96b039c0bf04341da75abde9bf26bbf31af3dd064c086b1e2325",
+        "scope_granted": "tools=[read,write];resources=[repo];ops=[call]",
+        "sequence": 1,
+        "timestamp": 1763900060
+      },
+      {
+        "action": {
+          "arguments_hash": "3d168d771022d0f806e55a029cad0bc34a8656442754e361de6eb35250a98e96",
+          "name": "repo.read_file"
+        },
+        "agent": {
+          "id": "agent-operator-1",
+          "model": "model-x",
+          "model_version": "1.0"
+        },
+        "delegator": "seat-founder",
+        "effects": {
+          "artifacts_changed": [],
+          "external_calls": [],
+          "sub_delegations": []
+        },
+        "envelope": {
+          "payload": "eyJhY3Rpb24iOnsiYXJndW1lbnRzX2hhc2giOiIzZDE2OGQ3NzEwMjJkMGY4MDZlNTVhMDI5Y2FkMGJjMzRhODY1NjQ0Mjc1NGUzNjFkZTZlYjM1MjUwYTk4ZTk2IiwibmFtZSI6InJlcG8ucmVhZF9maWxlIn0sImFnZW50Ijp7ImlkIjoiYWdlbnQtb3BlcmF0b3ItMSIsIm1vZGVsIjoibW9kZWwteCIsIm1vZGVsX3ZlcnNpb24iOiIxLjAifSwiZGVsZWdhdG9yIjoic2VhdC1mb3VuZGVyIiwiZWZmZWN0cyI6eyJhcnRpZmFjdHNfY2hhbmdlZCI6W10sImV4dGVybmFsX2NhbGxzIjpbXSwic3ViX2RlbGVnYXRpb25zIjpbXX0sInByaW9yX3JlY2VpcHRfaGFzaCI6IjMyNWVmYTBiZTBiNTJkMWY2YTc4YmJiNzRjZGU0YTE3NDE0ZDUxNjMzNWU3NTZkZTYyOWYyZjYxM2Q1NTk3ODAiLCJyZWNlaXB0X2lkIjoici0wMDAzIiwicmVjZWlwdF90eXBlIjoiQUNUSU9OIiwicmVjZWlwdF92ZXJzaW9uIjoiMC4xIiwicmVzdWx0X2hhc2giOiI5M2JlNDY0ODhmYWMwMWIyNTk2NzMwOGMyY2MyM2RiMWU1Y2ZkNTA1NGUwMDAxN2YzODM4ZDc0NDI4ZTM4ZGI4Iiwic2NvcGVfZ3JhbnRlZCI6InRvb2xzPVtyZWFkLHdyaXRlXTtyZXNvdXJjZXM9W3JlcG9dO29wcz1bY2FsbF0iLCJzZXF1ZW5jZSI6MiwidGltZXN0YW1wIjoxNzYzOTAwMTIwfQ==",
+          "payload_type": "application/vnd.acta.receipt.v0.1+json",
+          "signatures": [
+            {
+              "key_id": "acta-test-key-1",
+              "signature": "/x0BO1/QCfuqPqdku6+fRLgptOk9ooNFuA+76frtW/w="
+            }
+          ]
+        },
+        "prior_receipt_hash": "325efa0be0b52d1f6a78bbb74cde4a17414d516335e756de629f2f613d559780",
+        "receipt_hash": "6f045a0db81f62398deb3cce5bfce8726691591380ccbfc7a07bffcebe36c976",
+        "receipt_id": "r-0003",
+        "receipt_type": "ACTION",
+        "receipt_version": "0.1",
+        "result_hash": "93be46488fac01b25967308c2cc23db1e5cfd5054e00017f3838d74428e38db8",
+        "scope_granted": "tools=[read,write];resources=[repo];ops=[call]",
+        "sequence": 2,
+        "timestamp": 1763900120
+      },
+      {
+        "action": {
+          "arguments_hash": "c5c66c4fe6605d677f0fb3f40ae9d9641e28893054bb1fd76367b8efa103304d",
+          "name": "standing.kill-burn"
+        },
+        "agent": {
+          "id": "agent-operator-1",
+          "model": "model-x",
+          "model_version": "1.0"
+        },
+        "delegator": "seat-founder",
+        "effects": {
+          "artifacts_changed": [],
+          "external_calls": [],
+          "sub_delegations": []
+        },
+        "envelope": {
+          "payload": "eyJhY3Rpb24iOnsiYXJndW1lbnRzX2hhc2giOiJjNWM2NmM0ZmU2NjA1ZDY3N2YwZmIzZjQwYWU5ZDk2NDFlMjg4OTMwNTRiYjFmZDc2MzY3YjhlZmExMDMzMDRkIiwibmFtZSI6InN0YW5kaW5nLmtpbGwtYnVybiJ9LCJhZ2VudCI6eyJpZCI6ImFnZW50LW9wZXJhdG9yLTEiLCJtb2RlbCI6Im1vZGVsLXgiLCJtb2RlbF92ZXJzaW9uIjoiMS4wIn0sImRlbGVnYXRvciI6InNlYXQtZm91bmRlciIsImVmZmVjdHMiOnsiYXJ0aWZhY3RzX2NoYW5nZWQiOltdLCJleHRlcm5hbF9jYWxscyI6W10sInN1Yl9kZWxlZ2F0aW9ucyI6W119LCJraWxsZWRfYWdlbnRfaWRzIjpbImFnZW50LW9wZXJhdG9yLTEiXSwicHJpb3JfcmVjZWlwdF9oYXNoIjoiNmYwNDVhMGRiODFmNjIzOThkZWIzY2NlNWJmY2U4NzI2NjkxNTkxMzgwY2NiZmM3YTA3YmZmY2ViZTM2Yzk3NiIsInJlY2VpcHRfaWQiOiJyLWtpbGwtYnVybiIsInJlY2VpcHRfdHlwZSI6IktJTEwtQlVSTiIsInJlY2VpcHRfdmVyc2lvbiI6IjAuMSIsInJlc3VsdF9oYXNoIjoiZGNiNjM5OTAxMjk0NjMxZGFjZThlMmJmMTI3ZjdjMTRhMzYzZDY4YWYwYWQxZjFhNmFlNzIxMjRiNjBlMjVmNyIsInNjb3BlX2dyYW50ZWQiOiJ0b29scz1bcmVhZCx3cml0ZV07cmVzb3VyY2VzPVtyZXBvXTtvcHM9W2NhbGxdIiwic2VxdWVuY2UiOjMsInRpbWVzdGFtcCI6MTc2MzkwMDE4MH0=",
+          "payload_type": "application/vnd.acta.receipt.v0.1+json",
+          "signatures": [
+            {
+              "key_id": "acta-test-key-1",
+              "signature": "AHFhxnF3gRN5biTCES9mH1sa1/aGHIOHiB+ZLPslsBk="
+            }
+          ]
+        },
+        "killed_agent_ids": [
+          "agent-operator-1"
+        ],
+        "prior_receipt_hash": "6f045a0db81f62398deb3cce5bfce8726691591380ccbfc7a07bffcebe36c976",
+        "receipt_hash": "792f1db9f945a308d2370a52cfee128f723609f765e39a74233ff7e964649693",
+        "receipt_id": "r-kill-burn",
+        "receipt_type": "KILL-BURN",
+        "receipt_version": "0.1",
+        "result_hash": "dcb639901294631dace8e2bf127f7c14a363d68af0ad1f1a6ae72124b60e25f7",
+        "scope_granted": "tools=[read,write];resources=[repo];ops=[call]",
+        "sequence": 3,
+        "timestamp": 1763900180
+      },
+      {
+        "action": {
+          "arguments_hash": "872dbc2fb2fefaf4a4fdb3867553024591580f94c216c7c1989c7fff8d083352",
+          "name": "repo.write_file"
+        },
+        "agent": {
+          "id": "agent-operator-1",
+          "model": "model-x",
+          "model_version": "1.0"
+        },
+        "delegator": "seat-founder",
+        "effects": {
+          "artifacts_changed": [],
+          "external_calls": [],
+          "sub_delegations": []
+        },
+        "envelope": {
+          "payload": "eyJhY3Rpb24iOnsiYXJndW1lbnRzX2hhc2giOiI4NzJkYmMyZmIyZmVmYWY0YTRmZGIzODY3NTUzMDI0NTkxNTgwZjk0YzIxNmM3YzE5ODljN2ZmZjhkMDgzMzUyIiwibmFtZSI6InJlcG8ud3JpdGVfZmlsZSJ9LCJhZ2VudCI6eyJpZCI6ImFnZW50LW9wZXJhdG9yLTEiLCJtb2RlbCI6Im1vZGVsLXgiLCJtb2RlbF92ZXJzaW9uIjoiMS4wIn0sImRlbGVnYXRvciI6InNlYXQtZm91bmRlciIsImVmZmVjdHMiOnsiYXJ0aWZhY3RzX2NoYW5nZWQiOltdLCJleHRlcm5hbF9jYWxscyI6W10sInN1Yl9kZWxlZ2F0aW9ucyI6W119LCJwcmlvcl9yZWNlaXB0X2hhc2giOiI3OTJmMWRiOWY5NDVhMzA4ZDIzNzBhNTJjZmVlMTI4ZjcyMzYwOWY3NjVlMzlhNzQyMzNmZjdlOTY0NjQ5NjkzIiwicmVhc29uX2NvZGUiOiJyZXZva2VkIiwicmVjZWlwdF9pZCI6InItYWZ0ZXItaGFsdCIsInJlY2VpcHRfdHlwZSI6IkRFTklBTCIsInJlY2VpcHRfdmVyc2lvbiI6IjAuMSIsInJlc3VsdF9oYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsInNjb3BlX2dyYW50ZWQiOiJ0b29scz1bcmVhZCx3cml0ZV07cmVzb3VyY2VzPVtyZXBvXTtvcHM9W2NhbGxdIiwic2VxdWVuY2UiOjQsInRpbWVzdGFtcCI6MTc2MzkwMDI0MCwidmVyZGljdCI6eyJkZWNpc2lvbiI6ImRlbnkiLCJkZXRhaWwiOiJ0aGUgb3JnYW5pc2F0aW9uIGlzIGhhbHRlZCBieSB0aGUga2lsbCBzd2l0Y2g7IGV2ZXJ5IHNlYXQgaXMgc3VzcGVuZGVkIiwicmVhc29uX2NvZGUiOiJyZXZva2VkIn19",
+          "payload_type": "application/vnd.acta.receipt.v0.1+json",
+          "signatures": [
+            {
+              "key_id": "acta-test-key-1",
+              "signature": "lDXa2KPUrgwdLrDlRamIhm6eTsTunZE4KEgYjE/PylI="
+            }
+          ]
+        },
+        "prior_receipt_hash": "792f1db9f945a308d2370a52cfee128f723609f765e39a74233ff7e964649693",
+        "reason_code": "revoked",
+        "receipt_hash": "8dab00f4026b9014dc2bec421687f9108ed157aa693436f837a9c1aaacde6d17",
+        "receipt_id": "r-after-halt",
+        "receipt_type": "DENIAL",
+        "receipt_version": "0.1",
+        "result_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "scope_granted": "tools=[read,write];resources=[repo];ops=[call]",
+        "sequence": 4,
+        "timestamp": 1763900240,
+        "verdict": {
+          "decision": "deny",
+          "detail": "the organisation is halted by the kill switch; every seat is suspended",
+          "reason_code": "revoked"
+        }
+      }
+    ]
+  },
+  "expected_last_receipt": {
+    "reason_code": "revoked",
+    "receipt_type": "DENIAL"
+  },
+  "expected_verdict": "valid",
+  "kind": "receipt_bundle",
+  "name": "kill-switch halt receipt followed by an attempted action, denied"
+}
